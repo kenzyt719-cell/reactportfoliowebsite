@@ -1,0 +1,38 @@
+/* CardBlogs.css */
+.divblogs_index {
+      width: 857px;
+    flex-direction: row;
+    background: #140828;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.blogsttext {
+  padding-left: 20px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.miantextblog_index {
+  color: #fdfdf1;
+  font-family: Lufga;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 101%;
+}
+
+.miantextblog_indexsmall {
+  color: #fdfdf1;
+  font-family: Lufga;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.fulltext {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

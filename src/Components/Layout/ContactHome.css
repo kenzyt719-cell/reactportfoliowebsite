@@ -1,0 +1,63 @@
+.secounddivdeails {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+  background: #fdfdf1;
+}
+
+.deatilsfonttyello {
+  color: #102;
+  text-align: center;
+  font-family: Lufga;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contactbar {
+  margin: auto;
+  border-radius: 50px;
+  border: 1px solid rgba(253, 111, 0, 0.39);
+  box-shadow: 0 4px 4px rgba(253, 111, 0, 0.5);
+  backdrop-filter: blur(7.5px);
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 56px;
+  padding: 14px;
+  position: relative;
+}
+
+.EnterEmailtext {
+  color: #140828;
+  margin-left: 4%;
+  font-family: Lufga;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+
+.buttionorange {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  background: #fd853a;
+  gap: 10px;
+}
+
+.sendbutttontext {
+  color: #fff;
+  font-family: Lufga;
+  font-size: 20px;
+}
