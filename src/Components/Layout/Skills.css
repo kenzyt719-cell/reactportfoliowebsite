@@ -1,0 +1,52 @@
+.bgdetails2 {
+  padding-top: 5%;
+  flex-direction: column;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+  background: #020103;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.deatilsfonttyello {
+  color: #102;
+  text-align: center;
+  font-family: Lufga;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.colorwhite {
+  color: #fdfdf1;
+  text-align: center;
+  font-family: Lufga;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.divsboxses {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.textskills {
+  color: #fdfdf1;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}h1,h2,p{
+   padding: 0;
+    margin: 0;
+}
+body{
+   
+    margin: 0;
+}

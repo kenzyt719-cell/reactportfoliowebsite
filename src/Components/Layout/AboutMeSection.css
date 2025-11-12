@@ -1,0 +1,41 @@
+.aboutmeindex {
+  display: flex;
+  justify-content: center;
+  padding: 50px 5%;
+  background-color: #fff; /* optional, can remove */
+}
+
+.aboutme-content {
+  max-width: 1000px;
+}
+
+.deatilsfonttyelloagaiam {
+  color: #102;
+  font-family: Lufga, sans-serif;
+  font-weight: 700;
+  font-size: 3.5vw;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.longtext {
+  color: rgba(57, 20, 0, 0.64);
+  font-family: Lufga, sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .deatilsfonttyelloagaiam {
+    font-size: 6vw;
+  }
+
+  .longtext {
+    font-size: 3.5vw;
+    line-height: 1.5;
+  }
+}

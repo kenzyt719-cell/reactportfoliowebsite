@@ -1,0 +1,107 @@
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 70px auto 0; /* margin-top: 70px */
+}
+
+/* ...rest of your CSS remains the same... */
+
+.faq-text {
+  flex: 1 1 40%;
+}
+
+.faq-text h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.faq-text p {
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+.faq-container {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 20px;
+  background: #fef4eb;
+}
+
+.faq-item.active .faq-question {
+  background: #f36b22;
+  color: #fff;
+}
+
+.faq-item.active .faq-question .icon {
+  transform: rotate(180deg);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.icon {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    flex-direction: column;
+  }
+}
+
+.pfaq {
+  color: #140828;
+  font-family: Lufga;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.pfaqc2 {
+  color: #140828;
+  font-family: Lufga;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.deatilsfonttyelloagaiam {
+  color: #102;
+  text-align: left;
+  font-family: Lufga;
+  font-size: 3.5vw;
+  font-weight: 700;
+}

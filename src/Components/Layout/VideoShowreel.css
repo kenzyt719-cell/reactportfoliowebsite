@@ -1,0 +1,43 @@
+/* .video-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s;
+}
+
+video.paused {
+  filter: grayscale(100%);
+}
+
+.btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}h1,h2,p{
+   padding: 0;
+    margin: 0;
+}
+body{
+   
+    margin: 0;
+} */

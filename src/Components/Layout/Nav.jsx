@@ -1,0 +1,30 @@
+import React from "react";
+import "./Nav.css";
+import logo from "../../Assets/main logo header.png";
+import { Link } from "react-router-dom";
+
+
+const Nav = () => {
+  return (
+    <div className="styleheader">
+      <header className="navbar">
+        <div className="nav-content">
+          <Link to="/contactus" className="nav-link">Contact Me</Link>
+          <Link to="/aboutme" className="nav-link">About Me</Link>
+
+          {/* هنا حطينا النص المتحرك */}
+        
+
+          <Link to="/">
+            <img src={logo} alt="Main Logo" className="nav-logo" />
+          </Link>
+
+          <Link to="/my-services" className="nav-link">My Services</Link>
+          <Link to="/blogs" className="nav-link">The Blogs</Link>
+        </div>
+      </header>
+    </div>
+  );
+};
+
+export default Nav;

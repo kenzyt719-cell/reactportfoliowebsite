@@ -1,0 +1,55 @@
+.styleheader {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 76px;
+  background: #140828;
+  border-radius: 38px;
+  z-index: 99;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+
+.nav-link {
+  color: #fff;
+  font-family: "Lufga", sans-serif;
+  font-weight: 400;
+  font-size: 1.8vw;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fb6514;
+  transform: translateY(-2px);
+}
+
+.nav-logo {
+  height: 6vw;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}h1,h2,p{
+   padding: 0;
+    margin: 0;
+}
+body{
+   
+    margin: 0;
+}

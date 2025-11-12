@@ -1,0 +1,40 @@
+.deatilsfonttyello22 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    color: #102;
+    text-align: center;
+    font-family: Lufga;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.workexperince {
+    padding-bottom: 100px;
+    gap: 5%;
+    justify-content: center;
+    display: flex;
+}
+
+.uxuitextexperience {
+    color: #140828;
+    font-family: Lufga;
+    font-size: 35.963px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 35.963px */
+    letter-spacing: -0.539px;
+}
+
+.designtext1 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgba(20, 8, 40, 0.47);
+    font-family: Lufga;
+    font-size: 17.982px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.27px;
+}

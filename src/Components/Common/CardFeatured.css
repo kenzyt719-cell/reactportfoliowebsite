@@ -1,0 +1,135 @@
+.deatilsfonttyello22 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    color: #102;
+    text-align: center;
+    font-family: Lufga, sans-serif;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cardindexx {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cardmnaindivindex {
+  width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imgcard {
+    position: relative;
+}
+
+.arrowindex {
+    position: absolute;
+    top: 315px;
+    right: 20px;
+    border-radius: 100px;
+    background: #140828;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    padding: 17.575px;
+    justify-content: center;
+    align-items: center;
+    gap: 8.369px;
+}
+
+.cuttoncardsdark {
+    border-radius: 21px;
+    border: 1.524px solid #FFF1E6;
+    background: #140828;
+    box-shadow: 0 0 12.189px rgba(255, 255, 255, 0.25) inset, 0 0 12.418px rgba(253, 111, 0, 0.75);
+    backdrop-filter: blur(26.968px);
+    display: flex;
+    width: 133px;
+    height: 8px;
+    padding: 26.473px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26.473px;
+}
+
+.uxuidesigntext {
+    color: #F0F5F9;
+    text-align: center;
+    font-family: Lufga, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.diplaytex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.doitt {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background-color: #FD853A;
+    border-radius: 50%;
+}
+
+.deatilsindext {
+    color: #344054;
+    font-family: Lufga, sans-serif;
+    font-size: 17.737px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.deatilsindext2 {
+    color: #344054;
+    font-family: Lufga, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttonindexwhite {
+    display: flex;
+    width: 139px;
+    height: 0;
+    padding: 26.021px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36.021px;
+    flex-shrink: 0;
+    border-radius: 28.574px;
+    border: 2.073px solid #FD6F00;
+    box-shadow: 0 0 16.585px rgba(255, 255, 255, 0.25) inset, 0 0 16.896px rgba(253, 111, 0, 0.75);
+    backdrop-filter: blur(36.695px);
+}
+
+.viewall {
+    color: #140828;
+    text-align: center;
+    font-family: Lufga, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.middleidnex {
+    display: flex;
+    margin: 3% 0;
+    justify-content: center;
+}
