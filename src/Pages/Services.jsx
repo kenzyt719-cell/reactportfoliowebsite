@@ -33,13 +33,11 @@ const Services = () => {
       {/* Rest remain normal */}
       <Featured />
       <Featured />
-      <Featured />
-
+    
       <Skills />
       <WorkExperience />
       <Blogs />
-      <Blogs />
-      <Blogs />
+    
       <ContactHome />
       <Footer />
     </>

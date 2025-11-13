@@ -12,6 +12,7 @@ import Faq from "../Components/Layout/Faq";
 import Blogs from "../Components/Layout/Blogs";
 import ContactHome from "../Components/Layout/ContactHome";
 import Footer from "../Components/Layout/Footer";
+import ButtonDetailsWhite from "../Components/Common/ButtonDetailsWhite";
 
 
 
@@ -34,6 +35,7 @@ const Home = () => {
       <Nav />
       <Header />
       <Featured />
+        <ButtonDetailsWhite text="View All" />
       {/* <VideoShowreel /> */}
       <Skills />
       <WorkExperience />

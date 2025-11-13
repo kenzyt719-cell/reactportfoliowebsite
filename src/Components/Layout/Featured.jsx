@@ -51,9 +51,7 @@ const Featured = () => {
       </div>
 
       <div className="middleidnex">
-        <div className="buttonindexwhite">
-          <h1 className="viewall">View All</h1>
-        </div>
+  
       </div>
     </div>
   );
