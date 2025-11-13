@@ -27,6 +27,7 @@ const Services = () => {
 
       {/* Make first Featured clickable */}
       <div onClick={handleFirstFeaturedClick} style={{ cursor: "pointer" }}>
+         <h1 className="deatilsfonttyello22">Featured Categories</h1>
         <Featured />
       </div>
 

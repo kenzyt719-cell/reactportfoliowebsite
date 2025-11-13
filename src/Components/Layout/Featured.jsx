@@ -34,7 +34,7 @@ const cardsData = [
 const Featured = () => {
   return (
     <div>
-      <h1 className="deatilsfonttyello22">Featured Categories</h1>
+     
 
       <div className="cardindexx">
         {cardsData.map((card, index) => (

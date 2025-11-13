@@ -8,14 +8,13 @@ import WorkExperience from "../Components/Layout/WorkExperience";
 import AboutMeSection from "../Components/Layout/AboutMeSection";
 import ImageTrail from "../Components/Layout/ImageTrail";
 import Faq from "../Components/Layout/Faq";
-
 import Blogs from "../Components/Layout/Blogs";
 import ContactHome from "../Components/Layout/ContactHome";
 import Footer from "../Components/Layout/Footer";
 import ButtonDetailsWhite from "../Components/Common/ButtonDetailsWhite";
 
-
-
+// Splash Cursor
+import SplashCursorEffect from "../Components/Layout/SplashCursor";
 
 // Import your PNG images
 import img1 from "../Assets/img1.png";
@@ -32,28 +31,35 @@ const imageItems = [img1, img2, img3, img4, img5, img6, img7, img8];
 const Home = () => {
   return (
     <>
+      {/* Splash cursor effect */}
+      <SplashCursorEffect />
+
       <Nav />
       <Header />
+               <h1 className="deatilsfonttyello22">Featured Categories</h1>
+
       <Featured />
-        <ButtonDetailsWhite text="View All" />
+      <ButtonDetailsWhite text="View All" />
       {/* <VideoShowreel /> */}
       <Skills />
       <WorkExperience />
-       <div style={{ width: "100%", height: "50px", position: "relative" }}>
-        <ImageTrail items={imageItems} variant={1} />
-      </div>
-      <AboutMeSection />
 
-      {/* ImageTrail with images and a variant */}
+      {/* ImageTrail Section */}
       <div style={{ width: "100%", height: "50px", position: "relative" }}>
         <ImageTrail items={imageItems} variant={1} />
       </div>
-      <Faq />
 
+      <AboutMeSection />
+
+      {/* Second ImageTrail Section */}
+      <div style={{ width: "100%", height: "50px", position: "relative" }}>
+        <ImageTrail items={imageItems} variant={1} />
+      </div>
+
+      <Faq />
       <Blogs />
       <ContactHome />
       <Footer />
-
     </>
   );
 };
