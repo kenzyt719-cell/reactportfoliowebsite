@@ -19,8 +19,8 @@ const Nav = () => {
             <img src={logo} alt="Main Logo" className="nav-logo" />
           </Link>
 
-          <Link to="/my-services" className="nav-link">My Services</Link>
-          <Link to="/blogs" className="nav-link">The Blogs</Link>
+<Link to="/Services" className="nav-link">My Services</Link>  
+        <Link to="/blogs" className="nav-link">The Blogs</Link>
         </div>
       </header>
     </div>

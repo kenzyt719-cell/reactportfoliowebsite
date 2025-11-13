@@ -8,7 +8,7 @@ import WorkExperience from "../Components/Layout/WorkExperience";
 import AboutMeSection from "../Components/Layout/AboutMeSection";
 import ImageTrail from "../Components/Layout/ImageTrail";
 import Faq from "../Components/Layout/Faq";
-import MagicBento from "../Components/Layout/MagicBento";
+
 import Blogs from "../Components/Layout/Blogs";
 import ContactHome from "../Components/Layout/ContactHome";
 import Footer from "../Components/Layout/Footer";
@@ -47,7 +47,7 @@ const Home = () => {
         <ImageTrail items={imageItems} variant={1} />
       </div>
       <Faq />
-      <MagicBento />
+
       <Blogs />
       <ContactHome />
       <Footer />
