@@ -12,6 +12,9 @@ import Blogs from "../Components/Layout/Blogs";
 import ContactHome from "../Components/Layout/ContactHome";
 import Footer from "../Components/Layout/Footer";
 import ButtonDetailsWhite from "../Components/Common/ButtonDetailsWhite";
+import DomeGallery from "../Components/Layout/DomeGallery";
+
+
 
 // Splash Cursor
 import SplashCursorEffect from "../Components/Layout/SplashCursor";
@@ -58,8 +61,9 @@ const Home = () => {
 
       <Faq />
       <Blogs />
-      <ContactHome />
       <Footer />
+      <DomeGallery />
+
     </>
   );
 };

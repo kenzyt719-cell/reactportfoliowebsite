@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Services from "./Pages/Services";
 import Blogs from "./Pages/BlogCard";
-import ProjDetails from "./Pages/ProjDetails"; // adjust path if needed
+import ProjDetails from "./Pages/ProjDetails"; // existing dynamic subpage
 
 const RoutingApp = () => {
   return (
@@ -11,10 +11,8 @@ const RoutingApp = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/services/:id" element={<ProjDetails />} />
-
-                <Route path="/BlogCard" element={<Blogs />} />   {/* ← ده الجديد */}
-
+        <Route path="/services/:id" element={<ProjDetails />} /> {/* dynamic subpage */}
+        <Route path="/BlogCard" element={<Blogs />} />
       </Routes>
     </BrowserRouter>
   );

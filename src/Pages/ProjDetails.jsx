@@ -1,5 +1,5 @@
-
 import React from "react";
+import { useParams } from "react-router-dom"; // ← for dynamic id
 import "./ProjDetails.css";
 import ProjDetailsHeader from "../Components/Layout/ProjDetailsHeader";
 import Nav from "../Components/Layout/Nav";
@@ -10,22 +10,21 @@ import ContactHome from "../Components/Layout/ContactHome";
 import Footer from "../Components/Layout/Footer";
 
 const ProjDetails = () => {
+  const { id } = useParams(); // gets the dynamic project id from /services/:id
+
   return (
-    
     <div className="projdetails-page">
       <Nav />
 
-      <ProjDetailsHeader />
-      <ProjDetailsSection />
-      <ProjDetailsThirdSection />
-      <Masonry />
-      {/* You can later add more sections here, like overview, process, gallery, etc. */}
-    
-    
-     <ContactHome />
+      {/* You can pass the id to any section if you want dynamic content */}
+      <ProjDetailsHeader projectId={id} />
+      <ProjDetailsSection projectId={id} />
+      <ProjDetailsThirdSection projectId={id} />
+      <Masonry projectId={id} />
+
+      <ContactHome />
       <Footer />
     </div>
-    
   );
 };
 
