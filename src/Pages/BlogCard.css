@@ -1,0 +1,52 @@
+.styleddd {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  text-decoration: none;
+}
+
+.divblogs_index2 {
+  width: 962px;
+  height: 309px;
+  background: #11071F;
+  display: flex;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.divblogs_index2.reverse {
+  flex-direction: row-reverse;
+}
+
+.styleeditss {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.styleboxx-img {
+  width: 327px;
+  height: 309px;
+  object-fit: cover;
+}
+
+.miantextblog_index {
+  color: #FDFDF1;
+  font-family: Lufga;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.miantextblog_indexsmall {
+  color: #FDFDF1;
+  font-family: Lufga;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.fulltext {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
