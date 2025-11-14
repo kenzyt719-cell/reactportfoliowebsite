@@ -8,12 +8,14 @@ import ProjDetailsThirdSection from "../Components/Layout/ProjDetailsThirdSectio
 import Masonry from "../Components/Layout/Masonry";
 import ContactHome from "../Components/Layout/ContactHome";
 import Footer from "../Components/Layout/Footer";
+import SplashCursorEffect from "../Components/Layout/SplashCursor";
 
 const ProjDetails = () => {
   const { id } = useParams(); // gets the dynamic project id from /services/:id
 
   return (
-    <div className="projdetails-page">
+    <div className="projdetails-page">\
+          <SplashCursorEffect />
       <Nav />
 
       {/* You can pass the id to any section if you want dynamic content */}

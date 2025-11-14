@@ -9,6 +9,7 @@ import ContactHome from "../Components/Layout/ContactHome";
 import Footer from "../Components/Layout/Footer";
 import CardSwap from "../Components/Layout/CardSwap";
 import AnimatedContent from "../Components/Layout/AnimatedContent";
+import SplashCursorEffect from "../Components/Layout/SplashCursor";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -19,6 +20,7 @@ const Services = () => {
 
   return (
     <>
+      <SplashCursorEffect />
       <Nav />
       <CardSwap />
 
