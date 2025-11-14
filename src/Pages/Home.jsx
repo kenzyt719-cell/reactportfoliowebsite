@@ -13,10 +13,7 @@ import ContactHome from "../Components/Layout/ContactHome";
 import Footer from "../Components/Layout/Footer";
 import ButtonDetailsWhite from "../Components/Common/ButtonDetailsWhite";
 import DomeGallery from "../Components/Layout/DomeGallery";
-
-
-
-// Splash Cursor
+import AnimatedContent from "../Components/Layout/AnimatedContent";
 import SplashCursorEffect from "../Components/Layout/SplashCursor";
 
 // Import your PNG images
@@ -34,36 +31,61 @@ const imageItems = [img1, img2, img3, img4, img5, img6, img7, img8];
 const Home = () => {
   return (
     <>
-      {/* Splash cursor effect */}
       <SplashCursorEffect />
-
       <Nav />
       <Header />
-               <h1 className="deatilsfonttyello22">Featured Categories</h1>
 
-      <Featured />
-      <ButtonDetailsWhite text="View All" />
-      {/* <VideoShowreel /> */}
-      <Skills />
-      <WorkExperience />
+      <AnimatedContent distance={50} delay={0}>
+        <h1 className="deatilsfonttyello22">Featured Categories</h1>
+        <Featured />
+        <ButtonDetailsWhite text="View All" />
+      </AnimatedContent>
 
-      {/* ImageTrail Section */}
-      <div style={{ width: "100%", height: "50px", position: "relative" }}>
-        <ImageTrail items={imageItems} variant={1} />
-      </div>
+      <AnimatedContent distance={50} delay={0.2}>
+        <Skills />
+      </AnimatedContent>
 
-      <AboutMeSection />
+      <AnimatedContent distance={50} delay={0.4}>
+        <WorkExperience />
+      </AnimatedContent>
 
-      {/* Second ImageTrail Section */}
-      <div style={{ width: "100%", height: "50px", position: "relative" }}>
-        <ImageTrail items={imageItems} variant={1} />
-      </div>
+      <AnimatedContent distance={50} delay={0.6}>
+        {/* First ImageTrail Section */}
+        <div style={{ width: "100%", height: "50px", position: "relative" }}>
+          <ImageTrail items={imageItems} variant={1} />
+        </div>
+      </AnimatedContent>
 
-      <Faq />
-      <Blogs />
-      <Footer />
-      <DomeGallery />
+      <AnimatedContent distance={50} delay={0.8}>
+        <AboutMeSection />
+      </AnimatedContent>
 
+      <AnimatedContent distance={50} delay={1}>
+        {/* Second ImageTrail Section */}
+        <div style={{ width: "100%", height: "50px", position: "relative" }}>
+          <ImageTrail items={imageItems} variant={1} />
+        </div>
+      </AnimatedContent>
+
+      <AnimatedContent distance={50} delay={1.2}>
+        <Faq />
+      </AnimatedContent>
+
+      <AnimatedContent distance={50} delay={1.4}>
+        <Blogs />
+      </AnimatedContent>
+
+      <AnimatedContent distance={50} delay={1.6}>
+        <ContactHome />
+      </AnimatedContent>
+
+      <AnimatedContent distance={50} delay={1.8}>
+        <Footer />
+      </AnimatedContent>
+
+      <AnimatedContent distance={50} delay={2}>
+        <DomeGallery />
+      </AnimatedContent>
     </>
   );
 };
