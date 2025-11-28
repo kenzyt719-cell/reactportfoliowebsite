@@ -1,0 +1,100 @@
+.contactbg {
+  gap: 3%;
+  flex-wrap: wrap;
+  padding-top: 5%;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.contactustext {
+  padding-top: 7%;
+  color: #FDFDF1;
+  text-align: center;
+  font-family: Lufga;
+  font-size: 3vw;
+  font-weight: 700;
+  line-height: 37px;
+}
+
+.stylecontactf {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  justify-content: center;
+  display: flex;
+}
+
+.stylequestoins1 {
+  gap: 10px;
+  flex-direction: column;
+  display: flex;
+}
+
+.questionstext {
+  color: #FFF;
+  font-family: Lufga;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.questionstext2 {
+  color: #FFF;
+  font-family: Lufga;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.stylenamedivs {
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+}
+
+.styledivs {
+  display: flex;
+  gap: 30px;
+}
+    .buttoncontact{
+        border-radius: 16px;
+border: 1.524px solid #FFF1E6;
+box-shadow: 0 0 12.189px 0 rgba(255, 255, 255, 0.25) inset, 0 0 12.418px 0 rgba(253, 111, 0, 0.75);
+backdrop-filter: blur(26.968364715576172px);
+        display: flex;
+    width: 106px;
+    height: 8px;
+    padding: 22px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 26.473px;
+flex-shrink: 0;
+    }
+.buttoncontact2 {
+  border-radius: 16px;
+  border: 1.524px solid #FFF1E6;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25) inset,
+    0 0 12px rgba(253, 111, 0, 0.75);
+  backdrop-filter: blur(27px);
+  display: flex;
+  width: 300px;
+  height: 8px;
+  padding: 22px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lastnametext {
+  color: rgba(240, 245, 249, 0.70);
+  text-align: center;
+  font-family: Lufga;
+  font-size: 18px;
+  font-weight: 400;
+}

@@ -6,6 +6,8 @@ import AnimatedContent from "../Components/Layout/AnimatedContent";
 import SplashCursorEffect from "../Components/Layout/SplashCursor";
 import MiddleTitle from "../Components/Common/MiddleTitle";
 import Nav from "../Components/Layout/Nav"; // ← IMPORTANT
+import TableOfContent from "../Components/Layout/TableOfContent"; // ← IMPORTANT
+import BlogDetailsSection from "../Components/Layout/BlogDetailsSection"; // ← IMPORTANT
 
 const BlogCardone = () => {
   const navigate = useNavigate();
@@ -18,8 +20,12 @@ const BlogCardone = () => {
     <>
       <SplashCursorEffect />
       <Nav />
+  
 
       <MiddleTitle title="View Details" />
+      
+    <TableOfContent />
+    <BlogDetailsSection />
 
       <AnimatedContent distance={50} delay={1.4}>
         <Footer />

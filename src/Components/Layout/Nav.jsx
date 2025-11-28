@@ -9,10 +9,10 @@ const Nav = () => {
     <div className="styleheader">
       <header className="navbar">
         <div className="nav-content">
-          <Link to="/contactus" className="nav-link">Contact Me</Link>
-          <Link to="/aboutme" className="nav-link">About Me</Link>
+          <Link to="/Contactme" className="nav-link">Contact Me</Link>
+          <Link to="/Aboutme" className="nav-link">About Me</Link>
 
-          {/* هنا حطينا النص المتحرك */}
+
         
 
           <Link to="/">
