@@ -15,6 +15,7 @@ import ButtonDetailsWhite from "../Components/Common/ButtonDetailsWhite";
 import DomeGallery from "../Components/Layout/DomeGallery";
 import AnimatedContent from "../Components/Layout/AnimatedContent";
 import SplashCursorEffect from "../Components/Layout/SplashCursor";
+import FlowingMenu from "../Components/Layout/FlowingMenu";
 
 // Import your PNG images
 import img1 from "../Assets/img1.png";
@@ -78,7 +79,16 @@ const Home = () => {
       <AnimatedContent distance={50} delay={1.6}>
         <ContactHome />
       </AnimatedContent>
-
+  {/* FLOWING MENU */}
+      <div style={{ height: "100vh", backgroundColor: "#020103" }}>
+        <FlowingMenu
+          items={[
+            { text: "UI / UX", link: "#", image: img1 },
+            { text: "Branding", link: "#", image: img2 },
+            { text: "Web Development", link: "#", image: img3 },
+          ]}
+        />
+      </div>
       <AnimatedContent distance={50} delay={1.8}>
         <Footer />
       </AnimatedContent>
