@@ -3,6 +3,7 @@
   justify-content: center;
 }
 
+/* ===== Desktop Navbar ===== */
 .navbar {
   position: fixed;
   top: 20px;
@@ -17,6 +18,7 @@
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
 }
 
+/* Desktop links */
 .nav-content {
   display: flex;
   justify-content: center;
@@ -45,11 +47,98 @@
 
 .nav-logo:hover {
   transform: scale(1.05);
-}h1,h2,p{
-   padding: 0;
-    margin: 0;
 }
-body{
-   
-    margin: 0;
+
+/* Reset */
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+
+/* ===== Burger (Mobile Only) ===== */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 30px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* ===== Mobile Menu (Hidden by default) ===== */
+.mobile-menu {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  background: #140828;
+  padding: 20px;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobile-menu a {
+
+    text-align: center;
+    font-family: lufga;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.show-menu {
+  display: flex;
+}
+
+/* Mobile logo inside menu */
+.mobile-logo-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.mobile-logo {
+  width: 80px;
+  height: auto;
+}
+
+/* ===== Mobile Styles ===== */
+@media (max-width: 850px) {
+  .nav-content {
+    display: none; /* Hide desktop links */
+  }
+
+  .navbar {
+    width: 11%;
+    max-width: 120px;
+    position: fixed;
+    right: 0;
+    margin-right: 30px;
+    top: 20px;
+    height: 76px;
+    background: #140828;
+    border-radius: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .nav-logo {
+    display: none; /* hide desktop logo on mobile */
+  }
 }

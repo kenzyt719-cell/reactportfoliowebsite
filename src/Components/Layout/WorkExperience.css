@@ -4,7 +4,7 @@
     color: #102;
     text-align: center;
     font-family: Lufga;
-    font-size: 52px;
+    font-size: 5vh;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -37,4 +37,25 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.27px;
+}
+@media (max-width: 768px) {
+    .uxuitextexperience {
+        font-size: 28px;  
+        line-height: 120%;
+    }
+
+    .designtext1 {
+        font-size: 12px; 
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+     .workexperince {
+       
+        gap: 20px; 
+        justify-content: center;
+        display: flex;
+        padding: 0px 20px; 
+        padding-bottom: 50px; 
+    }
 }

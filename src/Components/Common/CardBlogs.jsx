@@ -4,7 +4,7 @@ import "./CardBlogs.css";
 const CardBlogs = ({ img, title, description, arrow }) => {
   return (
     <div className="divblogs_index">
-      <img src={img} alt={title} />
+      <img className="styleimg" src={img} alt={title} />
       <div className="blogsttext">
         <h1
           className="miantextblog_index"

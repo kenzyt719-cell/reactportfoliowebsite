@@ -17,6 +17,8 @@ import AnimatedContent from "../Components/Layout/AnimatedContent";
 import SplashCursorEffect from "../Components/Layout/SplashCursor";
 import FlowingMenu from "../Components/Layout/FlowingMenu";
 
+import Hyperspeed from "../Components/Layout/Hyperspeed";
+
 // Import your PNG images
 import img1 from "../Assets/img1.png";
 import img2 from "../Assets/img2.png";
@@ -34,7 +36,9 @@ const Home = () => {
     <>
       <SplashCursorEffect />
       <Nav />
+          
       <Header />
+      
 
       <AnimatedContent distance={50} delay={0}>
         <h1 className="deatilsfonttyello22">Featured Categories</h1>
@@ -51,6 +55,7 @@ const Home = () => {
       </AnimatedContent>
 
       <AnimatedContent distance={50} delay={0.6}>
+       
         {/* First ImageTrail Section */}
         <div style={{ width: "100%", height: "50px", position: "relative" }}>
           <ImageTrail items={imageItems} variant={1} />
@@ -79,6 +84,7 @@ const Home = () => {
       <AnimatedContent distance={50} delay={1.6}>
         <ContactHome />
       </AnimatedContent>
+
   {/* FLOWING MENU */}
       <div style={{ height: "100vh", backgroundColor: "#020103" }}>
         <FlowingMenu

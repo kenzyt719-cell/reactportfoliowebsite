@@ -2,10 +2,12 @@ import React from "react";
 import "./Header.css";
 import mainVideo from "../../Assets/mainindex.mp4";
 import mainLogo from "../../Assets/mainlogo.png";
+import Hyperspeed from "../Layout/Hyperspeed";
 
 const Header = () => {
   return (
     <header className="aboutMe">
+   
       <video autoPlay muted loop playsInline className="bgVideo">
         <source src={mainVideo} type="video/mp4" />
       </video>
@@ -26,6 +28,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+  
     </header>
   );
 };
