@@ -28,3 +28,7 @@
   font-size: 22px;
   font-weight: 400;
 }
+.divmianbutton:hover {
+    background-color: orange; /* change entire button background to orange */
+    box-shadow: 0 0 15px rgba(253, 111, 0, 0.9); /* optional glow */
+}

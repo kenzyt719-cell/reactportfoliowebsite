@@ -1,5 +1,6 @@
 .button2white {
   margin: auto;
+  margin-bottom: 100px; /* bottom margin */
   display: flex;
   border-radius: 21px;
   border: 1.524px solid #FFF1E6;
@@ -14,11 +15,13 @@
   align-items: center;
   gap: 26.473px;
   flex-shrink: 0;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /* smooth transition */
+  background-color: #fff; /* initial button background */
 }
 
 .button2white:hover {
-  box-shadow: 0 0 15px rgba(253, 111, 0, 0.9);
+  background-color: orange; /* full button background on hover */
+  box-shadow: 0 0 15px rgba(253, 111, 0, 0.9); /* optional glow */
 }
 
 .detailstextwhite {
@@ -27,4 +30,10 @@
   font-family: Lufga, sans-serif;
   font-size: 22px;
   font-weight: 400;
+  transition: color 0.3s ease; /* optional: change text color too */
+}
+
+/* Optional: change text color on hover for contrast */
+.button2white:hover .detailstextwhite {
+  color: #fff; /* white text on orange button */
 }

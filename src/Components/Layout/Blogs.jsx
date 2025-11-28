@@ -1,5 +1,8 @@
 import React from "react";
 import CardBlogs from "../Common/CardBlogs";
+import ButtonDetailsWhite from "../Common/ButtonDetailsWhite";
+import { Link } from "react-router-dom";
+
 import "./Blogs.css";
 
 // Import images from Assets
@@ -40,11 +43,9 @@ const Blogs = () => {
         </div>
       </div>
       <div className="middleidnex">
-        <a href="blogs.html">
-          <div className="buttonindexwhiteuui">
-            <h1 className="viewall">View All</h1>
-          </div>
-        </a>
+  <Link to="/BlogCard" >
+                 <ButtonDetailsWhite text="View All" />
+      </Link>
       </div>
     </div>
   );

@@ -15,6 +15,12 @@
   backdrop-filter: blur(26px);
 }
 
+.buttonskills:hover {
+    background-color: orange; /* background changes to orange */
+    box-shadow: 0 0 15px rgba(253, 111, 0, 0.9); /* optional glow */
+}
+
+/* No changes to text color, it stays the original color */
 .figmah1 {
   color: #f0f5f9;
   text-align: center;

@@ -8,7 +8,7 @@ import arrow from "../Assets/arrow2.png";
 import Footer from "../Components/Layout/Footer";
 import ContactHome from "../Components/Layout/ContactHome";
 import SplashCursorEffect from "../Components/Layout/SplashCursor";
-
+import { Link } from "react-router-dom";
 import Nav from "../Components/Layout/Nav";
 
 const blogsData = [
@@ -30,8 +30,11 @@ const BlogCard  = () => {
   return (
     <div>
                   <SplashCursorEffect />
+
         <Nav />
       <h1 className="deatilsfonttyello2233">Blogs</h1>
+              <Link to="/BlogCard/:id" >
+    
       <div className="styleblogs">
         <div className="style2blogs">
           {blogsData.map((blog, index) => (
@@ -53,6 +56,7 @@ const BlogCard  = () => {
         </a>
         
       </div>
+      </Link>
             <ContactHome />
       <Footer />
     </div>

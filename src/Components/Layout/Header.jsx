@@ -22,11 +22,15 @@ const Header = () => {
           experiences through UX/UI design.
         </h1>
 
-        <div className="buttonWrapper">
-          <div className="buttonSkills">
-            <h1 className="figmaText">View All</h1>
-          </div>
-        </div>
+   <div className="buttonWrapper">
+  <div
+    className="buttonSkills"
+    onClick={() => window.scrollBy({ top: 800, left: 0, behavior: 'smooth' })}
+    style={{ cursor: "pointer" }}
+  >
+    <h1 className="figmaText">View All</h1>
+  </div>
+</div>
       </div>
   
     </header>

@@ -28,7 +28,8 @@ import img5 from "../Assets/img5.png";
 import img6 from "../Assets/img6.png";
 import img7 from "../Assets/img7.png";
 import img8 from "../Assets/img8.png";
-
+import { Link } from "react-router-dom";
+   
 const imageItems = [img1, img2, img3, img4, img5, img6, img7, img8];
 
 const Home = () => {
@@ -43,7 +44,11 @@ const Home = () => {
       <AnimatedContent distance={50} delay={0}>
         <h1 className="deatilsfonttyello22">Featured Categories</h1>
         <Featured />
+
+
+  <Link to="/services" >
         <ButtonDetailsWhite text="View All" />
+        </Link>
       </AnimatedContent>
 
       <AnimatedContent distance={50} delay={0.2}>
