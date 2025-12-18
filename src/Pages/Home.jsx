@@ -40,6 +40,7 @@ const Home = () => {
           
       <Header />
       
+      
 
       <AnimatedContent distance={50} delay={0}>
         <h1 className="deatilsfonttyello22">Featured Categories</h1>

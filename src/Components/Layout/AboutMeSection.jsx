@@ -1,24 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./AboutMeSection.css";
+import { supabase } from "../../Supabase";
 
 const AboutMeSection = () => {
+  const [hero, setHero] = useState({
+    title: "",
+    description: "",
+  });
+
+  useEffect(() => {
+    async function getHero() {
+      const { data } = await supabase
+        .from("Hero_section")
+        .select("title, description")
+        .range(1, 1); 
+
+      if (data && data.length > 0) {
+        setHero(data[0]);
+      }
+    }
+
+    getHero();
+  }, []);
+
   return (
     <section className="aboutmeindex">
       <div className="aboutme-content">
         <h1 className="deatilsfonttyelloagaiam">
-          About Me <br />
-          (UX/UI Designer)
+          {hero.title}
         </h1>
+
         <p className="longtext">
-          I’m a UX/UI Designer passionate about creating digital experiences that merge
-          usability with beautiful, purposeful design. I approach every project through
-          the lens of user experience, crafting user interfaces that feel intuitive,
-          accessible, and visually engaging. My UX/UI process combines research, design
-          thinking, and creativity — ensuring every interface not only looks refined but
-          also enhances user interaction and solves real problems. I value collaboration
-          and see each project as a partnership, working closely with clients to transform
-          ideas into impactful, user-centered products that align design, functionality,
-          and emotion.
+          {hero.description}
         </p>
       </div>
     </section>
