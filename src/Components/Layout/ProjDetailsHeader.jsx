@@ -1,10 +1,30 @@
-import React from "react";
+import React, { Component, useEffect, useState } from 'react';
+import { supabase } from '../../Supabase';
 import "./ProjDetailsHeader.css";
+
 import ButtonDetails from "../Common/ButtonDetails";
-import bgVid from "../../Assets/bgvid.png"; // background image
-import zooWebsite from "../../Assets/zoo wensite 1.png"; // main image
+import bgVid from "../../Assets/bgvid.png"; 
+import zooWebsite from "../../Assets/zoo wensite 1.png"; 
 
 const ProjDetailsHeader = () => {
+
+  const [Project , setProject] = useState([
+    { title: "1" }
+  ]);
+
+  useEffect(()=>{
+    async function callGetAPI(){
+      const res = await supabase
+        .from("Project_details")
+        .select("*")
+    ;
+
+      setProject(res.data);
+    }
+
+    callGetAPI();
+  },[])
+
   return (
     <div
       className="bgdetails"
@@ -16,12 +36,18 @@ const ProjDetailsHeader = () => {
       }}
     >
       <div className="divtextzoo">
-        <h1 className="gizazoofonth1">Giza Zoo Website</h1>
+
+
+        <h1 className="gizazoofonth1">
+          {Project[0].title}
+        </h1>
+
         <h2 className="gizazoofonth2">
-          A Modern Digital Experience for <br /> Egypt’s Oldest Zoo
+         
+         
         </h2>
         <h3 className="gizazoofonth3">
-          UX/UI Design Full Development Responsive (Mobile & Tablet)
+         {Project[0].description}
         </h3>
 
         <ButtonDetails text="View Details" />

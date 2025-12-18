@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom"; // ← for dynamic id
+import { useParams } from "react-router-dom"; 
 import "./ProjDetails.css";
 import ProjDetailsHeader from "../Components/Layout/ProjDetailsHeader";
 import Nav from "../Components/Layout/Nav";
@@ -11,14 +11,14 @@ import Footer from "../Components/Layout/Footer";
 import SplashCursorEffect from "../Components/Layout/SplashCursor";
 
 const ProjDetails = () => {
-  const { id } = useParams(); // gets the dynamic project id from /services/:id
+  const { id } = useParams(); 
 
   return (
     <div className="projdetails-page">\
           <SplashCursorEffect />
       <Nav />
 
-      {/* You can pass the id to any section if you want dynamic content */}
+     
       <ProjDetailsHeader projectId={id} />
       <ProjDetailsSection projectId={id} />
       <ProjDetailsThirdSection projectId={id} />

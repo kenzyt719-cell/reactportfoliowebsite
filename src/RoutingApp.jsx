@@ -7,6 +7,8 @@ import ProjDetails from "./Pages/ProjDetails"; // existing dynamic subpage
 import BlogCardone from "./Pages/BlogCardone";
 import Aboutme from "./Pages/Aboutme";
 import Contactme from "./Pages/Contactme";
+import TestApi from "./Pages/TestApi";
+
 
 const RoutingApp = () => {
   return (
@@ -14,11 +16,13 @@ const RoutingApp = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/services/:id" element={<ProjDetails />} /> {/* dynamic subpage */}
+        <Route path="/services/:id" element={<ProjDetails />} /> 
         <Route path="/BlogCard" element={<Blogs />} />
-        <Route path="/BlogCard/:id" element={<BlogCardone/>} /> {/* dynamic subpage */}
+        <Route path="/BlogCard/:id" element={<BlogCardone/>} /> 
         <Route path="/Aboutme" element={<Aboutme />} />
         <Route path="/Contactme" element={<Contactme />} />
+        <Route path="/TestApi" element={<TestApi/>} />
+
 
       </Routes>
     </BrowserRouter>
