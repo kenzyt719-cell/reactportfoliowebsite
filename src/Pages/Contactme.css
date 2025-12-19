@@ -13,7 +13,7 @@
 
 .contactustext {
   padding-top: 7%;
-  color: #FDFDF1;
+  color: #fdfdf1;
   text-align: center;
   font-family: Lufga;
   font-size: 3vw;
@@ -38,14 +38,14 @@
 }
 
 .questionstext {
-  color: #FFF;
+  color: #fff;
   font-family: Lufga;
   font-size: 40px;
   font-weight: 400;
 }
 
 .questionstext2 {
-  color: #FFF;
+  color: #fff;
   font-family: Lufga;
   font-size: 24px;
   font-weight: 400;
@@ -61,24 +61,25 @@
   display: flex;
   gap: 30px;
 }
-    .buttoncontact{
-        border-radius: 16px;
-border: 1.524px solid #FFF1E6;
-box-shadow: 0 0 12.189px 0 rgba(255, 255, 255, 0.25) inset, 0 0 12.418px 0 rgba(253, 111, 0, 0.75);
-backdrop-filter: blur(26.968364715576172px);
-        display: flex;
-    width: 106px;
-    height: 8px;
-    padding: 22px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 26.473px;
-flex-shrink: 0;
-    }
+
+.buttoncontact {
+  border-radius: 16px;
+  border: 1.524px solid #fff1e6;
+  box-shadow: 0 0 12.189px 0 rgba(255, 255, 255, 0.25) inset,
+    0 0 12.418px 0 rgba(253, 111, 0, 0.75);
+  backdrop-filter: blur(26.968364715576172px);
+  display: flex;
+  width: 106px;
+  height: 8px;
+  padding: 22px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .buttoncontact2 {
   border-radius: 16px;
-  border: 1.524px solid #FFF1E6;
+  border: 1.524px solid #fff1e6;
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.25) inset,
     0 0 12px rgba(253, 111, 0, 0.75);
   backdrop-filter: blur(27px);
@@ -92,9 +93,26 @@ flex-shrink: 0;
 }
 
 .lastnametext {
-  color: rgba(240, 245, 249, 0.70);
+  color: rgba(240, 245, 249, 0.7);
   text-align: center;
   font-family: Lufga;
   font-size: 18px;
   font-weight: 400;
+}
+.inputcontact {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: rgba(240, 245, 249, 0.7);
+  text-align: center;
+  font-family: Lufga;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.inputcontact::placeholder {
+  color: rgba(240, 245, 249, 0.7);
 }

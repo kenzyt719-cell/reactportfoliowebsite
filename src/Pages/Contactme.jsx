@@ -1,9 +1,9 @@
-import React from "react";
+import React , {useState} from "react";
 import "./Contactme.css";
+import { supabase } from "../Supabase";
 
 import Nav from "../Components/Layout/Nav";
 import Footer from "../Components/Layout/Footer";
-
 import FlowingMenu from "../Components/Layout/FlowingMenu";
 
 import bgImg from "../Assets/bgvid.png";
@@ -12,12 +12,23 @@ import img2 from "../Assets/bar.png";
 import img3 from "../Assets/WHATDOIDO.png";
 
 const Contactme = () => {
+  const[first_name,setfirst_name] = useState("");
+  const[email,setemail] = useState("");
+  const[last_name,setlast_name] = useState("");
+  const[msg,setMsg] = useState("");
+  async function sendMsg(){
+    const res = await supabase.from("contactus_main").insert({"first_name":first_name,"last_name":last_name,"email":email,"msg":msg,});
+                                                           
+  }
+
   return (
     <>
       <Nav />
 
-      {/* CONTACT SECTION */}
-      <div className="contactbg" style={{ backgroundImage: `url(${bgImg})` }}>
+      <div
+        className="contactbg"
+        style={{ backgroundImage: `url(${bgImg})` }}
+      >
         <h1 className="contactustext">Contact us</h1>
 
         <div className="stylecontactf">
@@ -38,36 +49,66 @@ const Contactme = () => {
             <h1 className="questionstext2">01095006444</h1>
           </div>
 
-          {/* RIGHT SIDE */}
-          <div className="stylenamedivs">
+    
+          <form className="stylenamedivs">
             <h1 className="questionstext">NAME</h1>
+
             <div className="styledivs">
-              <div className="buttoncontact">
-                <h1 className="lastnametext">Last Name</h1>
-              </div>
-              <div className="buttoncontact">
-                <h1 className="lastnametext">Last Name</h1>
-              </div>
+
+              <label className="buttoncontact">
+                <input onChange={(i)=>{setfirst_name(i.target.value)}}
+                  type="text"
+                  placeholder="First Name"
+                  className="inputcontact"
+                />
+              </label>
+
+              <label className="buttoncontact">
+                <input onChange={(i)=>{setlast_name(i.target.value)}}
+
+                  type="text"
+                  placeholder="Last Name"
+                  className="inputcontact"
+                />
+              </label>
             </div>
 
-            <h1 className="questionstext">NAME</h1>
+            <h1 className="questionstext">EMAIL</h1>
             <div className="styledivs">
-              <div className="buttoncontact2">
-                <h1 className="lastnametext">Last Name</h1>
-              </div>
+              <label className="buttoncontact2">
+                      <input onChange={(i)=>{setemail(i.target.value)}}
+
+
+                  type="email"
+                  placeholder="Your Email"
+                  className="inputcontact"
+                />
+              </label>
             </div>
 
-            <h1 className="questionstext">NAME</h1>
+            <h1 className="questionstext">MESSAGE</h1>
             <div className="styledivs">
-              <div className="buttoncontact2">
-                <h1 className="lastnametext">Last Name</h1>
-              </div>
+              <label className="buttoncontact2">
+                     <input onChange={(i)=>{setMsg(i.target.value)}}
+
+                  type="text"
+                  placeholder="Write your message"
+                  className="inputcontact"
+                />
+              </label>
             </div>
-          </div>
+
+           
+            <div className="contact-btn-wrapper">
+
+            </div>
+            {/* <button onClick={()=>{console.log(title)}}>test value</button> */}
+          </form>
+              <button onClick={sendMsg} className="hire-btn">Send Message</button>
         </div>
       </div>
+      
 
-      {/* FLOWING MENU */}
       <div style={{ height: "100vh", backgroundColor: "#020103" }}>
         <FlowingMenu
           items={[
@@ -79,6 +120,7 @@ const Contactme = () => {
       </div>
 
       <Footer />
+      
     </>
   );
 };
