@@ -1,29 +1,29 @@
-import React, { Component, useEffect, useState } from 'react';
-import { supabase } from '../../Supabase';
+import React, { useEffect, useState } from "react";
+import { supabase } from "../../Supabase";
 import "./ProjDetailsHeader.css";
 
 import ButtonDetails from "../Common/ButtonDetails";
-import bgVid from "../../Assets/bgvid.png"; 
-import zooWebsite from "../../Assets/zoo wensite 1.png"; 
+import bgVid from "../../Assets/bgvid.png";
+import zooWebsite from "../../Assets/zoo wensite 1.png";
 
 const ProjDetailsHeader = () => {
+  const [Project, setProject] = useState([]);
 
-  const [Project , setProject] = useState([
-    { title: "1" }
-  ]);
+  useEffect(() => {
+    async function callGetAPI() {
+      const { data, error } = await supabase
+        .from("edit_screen")
+        .select("*");
 
-  useEffect(()=>{
-    async function callGetAPI(){
-      const res = await supabase
-        .from("Project_details")
-        .select("*")
-    ;
-
-      setProject(res.data);
+      if (!error) {
+        setProject(data || []);
+      } else {
+        console.error(error);
+      }
     }
 
     callGetAPI();
-  },[])
+  }, []);
 
   return (
     <div
@@ -36,18 +36,12 @@ const ProjDetailsHeader = () => {
       }}
     >
       <div className="divtextzoo">
-
-
         <h1 className="gizazoofonth1">
-          {Project[0].title}
+          {Project[0]?.Title1}
         </h1>
 
-        <h2 className="gizazoofonth2">
-         
-         
-        </h2>
         <h3 className="gizazoofonth3">
-         {Project[0].description}
+          {Project[0]?.description1}
         </h3>
 
         <ButtonDetails text="View Details" />
