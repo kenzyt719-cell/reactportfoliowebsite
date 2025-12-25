@@ -36,22 +36,22 @@ const Projects = () => {
         <Skills />
       </AnimatedContent>
 
-      {/* Work Experience Section */}
+    
       <AnimatedContent distance={50} delay={0.8}>
         <WorkExperience />
       </AnimatedContent>
 
-      {/* Blogs Section */}
+
       <AnimatedContent distance={50} delay={1}>
         <Blogs />
       </AnimatedContent>
 
-      {/* Contact Section */}
+
       <AnimatedContent distance={50} delay={1.2}>
         <ContactHome />
       </AnimatedContent>
 
-      {/* Footer */}
+
       <AnimatedContent distance={50} delay={1.4}>
         <Footer />
       </AnimatedContent>

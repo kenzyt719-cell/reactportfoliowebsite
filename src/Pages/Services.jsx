@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Nav from "../Components/Layout/Nav";
-import Featured from "../Components/Layout/Featured";
+import Featuredtwo from "../Components/Layout/Featuredtwo";
 import Skills from "../Components/Layout/Skills";
 import WorkExperience from "../Components/Layout/WorkExperience";
 import Blogs from "../Components/Layout/Blogs";
@@ -28,7 +28,7 @@ const Services = () => {
       <AnimatedContent distance={50} delay={0}>
         <div onClick={handleFirstFeaturedClick} style={{ cursor: "pointer" }}>
           <h1 className="deatilsfonttyello22">Categories</h1>
-          <Featured />
+          <Featuredtwo />
         </div>
       </AnimatedContent>
 

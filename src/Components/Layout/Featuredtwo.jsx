@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 import CardFeatured from "../Common/CardFeatured";
-import "./Featured.css";
+import "./Featuredtwo.css";
 import cardImg from "../../Assets/card1.png"; // keep static image
 import arrowIcon from "../../Assets/arrow.png"; 
 import { supabase } from "../../Supabase";
 
-const Featured = () => {
+const Featuredtwo= () => {
   const [cardsData, setCardsData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function getCategories() {
-  const { data, error } = await supabase
-  .from("edit_screen") 
-  .select("*")
-  .order("id", { ascending: false });
+      const { data, error } = await supabase
+        .from("Categories")
+        .select("*")
+        .order("id", { ascending: false });
 
       if (!error) {
         setCardsData(data || []);
@@ -38,10 +38,10 @@ const Featured = () => {
             key={card.id}
             image={cardImg}             // static image
             arrow={arrowIcon}
-            category={card.Project}       // from table
-            type={card.tag}
+            category={card.title}       // from table
+            type={card.type}
             date={card.date}
-            title={card.description}   // from table
+            title={card.project_info}   // from table
           />
         ))}
       </div>
@@ -53,4 +53,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default Featuredtwo;
