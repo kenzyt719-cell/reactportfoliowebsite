@@ -11,11 +11,11 @@ import CardSwap from "../Components/Layout/CardSwap";
 import AnimatedContent from "../Components/Layout/AnimatedContent";
 import SplashCursorEffect from "../Components/Layout/SplashCursor";
 
-const Services = () => {
+const Projects = () => {
   const navigate = useNavigate();
 
   const handleFirstFeaturedClick = () => {
-    navigate("/projects"); 
+    navigate("/services/1");
   };
 
   return (
@@ -24,15 +24,14 @@ const Services = () => {
       <Nav />
       <CardSwap />
 
-     
+      {/* First Featured clickable, opens as ProjDetails subpage */}
       <AnimatedContent distance={50} delay={0}>
         <div onClick={handleFirstFeaturedClick} style={{ cursor: "pointer" }}>
-          <h1 className="deatilsfonttyello22">Categories</h1>
+          <h1 className="deatilsfonttyello22">Projects</h1>
           <Featured />
         </div>
       </AnimatedContent>
 
-      {/* Skills Section */}
       <AnimatedContent distance={50} delay={0.6}>
         <Skills />
       </AnimatedContent>
@@ -60,4 +59,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Projects;

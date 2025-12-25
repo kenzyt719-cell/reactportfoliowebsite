@@ -8,6 +8,8 @@ import BlogCardone from "./Pages/BlogCardone";
 import Aboutme from "./Pages/Aboutme";
 import Contactme from "./Pages/Contactme";
 import TestApi from "./Pages/TestApi";
+import Projects from "./Pages/Projects";
+
 
 
 const RoutingApp = () => {
@@ -22,6 +24,8 @@ const RoutingApp = () => {
         <Route path="/Aboutme" element={<Aboutme />} />
         <Route path="/Contactme" element={<Contactme />} />
         <Route path="/TestApi" element={<TestApi/>} />
+        <Route path="/Projects" element={<Projects/>} />
+
 
 
       </Routes>

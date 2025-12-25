@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom"; 
+import { useParams } from "react-router-dom";
 import "./ProjDetails.css";
 import ProjDetailsHeader from "../Components/Layout/ProjDetailsHeader";
 import Nav from "../Components/Layout/Nav";
@@ -14,7 +14,7 @@ const ProjDetails = () => {
   const { id } = useParams(); 
 
   return (
-    <div className="projdetails-page">\
+    <div className="projdetails-page">
           <SplashCursorEffect />
       <Nav />
 
