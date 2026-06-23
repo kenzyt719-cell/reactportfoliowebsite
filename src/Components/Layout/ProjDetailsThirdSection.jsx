@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from "react";
 import "./ProjDetailsThirdSection.css";
 import ButtonDetails from "../Common/ButtonDetails";
-import zooWebsite3 from "../../Assets/zoo website 3.png"; 
-import barImage from "../../Assets/bar.png"; 
-import bgVid from "../../Assets/bgvid.png"; 
+import zooWebsite3 from "../../Assets/zoo website 3.png";
+import barImage from "../../Assets/bar.png";
+import bgVid from "../../Assets/bgvid.png";
 import { supabase } from "../../Supabase";
 
 const ProjDetailsThirdSection = () => {
-
-  const [Project, setProject] = useState([
-    { title: "loading", description: "loading" }
-  ]);
+  const [Project, setProject] = useState([]);
 
   useEffect(() => {
     async function callGetAPI() {
-      const res = await supabase
-        .from("Project_details")
-        .select("*")
-        .eq("id", 3 );
+      const { data, error } = await supabase
+          .from("edit_screen")
+        .select("*");
 
-      setProject(res.data);
+      if (!error) {
+        setProject(data || []);
+      } else {
+        console.error(error);
+      }
     }
 
     callGetAPI();
@@ -39,14 +39,12 @@ const ProjDetailsThirdSection = () => {
         }}
       >
         <div className="divtextzoo">
-
-       
           <h1 className="gizazoofonth1">
-            {Project[0].title}
+            {Project[0]?.title3}
           </h1>
 
           <h2 className="gizazoofonth55">
-            {Project[0].description}
+            {Project[0]?.description3}
           </h2>
 
           <ButtonDetails text={buttonText} />
