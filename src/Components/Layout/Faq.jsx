@@ -9,8 +9,13 @@ export default function Faq() {
 
   useEffect(() => {
     async function getFaq() {
-      const res = await supabase.from("new_faq").select("*");
-      setFaqData(res.data);
+      const { data, error } = await supabase.from("new_faq").select("*");
+      if (error) {
+        console.error("Supabase FAQ error:", error);
+        setFaqData([]);
+      } else {
+        setFaqData(data || []);  // fallback to [] if data is null
+      }
       setLoading(false);
     }
     getFaq();
@@ -30,7 +35,7 @@ export default function Faq() {
         </h2>
         <p className="pfaq">
           Here are some common questions about my UX/UI design work and process.
-          I’ve shared insights into how I approach each project, collaborate with
+          I've shared insights into how I approach each project, collaborate with
           clients, and bring ideas to life through thoughtful design.
         </p>
       </div>
